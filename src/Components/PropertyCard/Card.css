@@ -1,0 +1,27 @@
+.home-container {
+  background-image: url("../../../public/bgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-container {
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  display: flex;
+}
+.cards-container .card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.cards-container .card:hover {
+  transform: scale(1.1);
+}

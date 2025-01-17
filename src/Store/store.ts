@@ -1,12 +1,12 @@
 // src/store/store.ts
 import { configureStore } from "@reduxjs/toolkit";
-import { properyApiSlice } from "../Features/API/propertApiSlice.ts";
+import { propertyApiSlice } from "../Features/API/propertApiSlice.ts";
 const store = configureStore({
   reducer: {
-    [properyApiSlice.reducerPath]: properyApiSlice.reducer,
+    [propertyApiSlice.reducerPath]: propertyApiSlice.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(properyApiSlice.middleware),
+    getDefaultMiddleware().concat(propertyApiSlice.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

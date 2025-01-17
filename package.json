@@ -6,6 +6,8 @@
     "@reduxjs/toolkit": "^2.5.0",
     "bootstrap": "^5.3.3",
     "cra-template-typescript": "1.2.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",

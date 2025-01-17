@@ -9,14 +9,14 @@ export interface Property {
   image: string;
 }
 
-export const properyApiSlice = createApi({
+export const propertyApiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_API_BASE_URL }),
   endpoints: (builder) => ({
     getProperties: builder.query<Property[], void>({
-      query: () => "/api/properties", // Endpoint to fetch properties
+      query: () => "/api/properties",
     }),
   }),
 });
 
-export const { useGetPropertiesQuery } = properyApiSlice;
+export const { useGetPropertiesQuery } = propertyApiSlice;
